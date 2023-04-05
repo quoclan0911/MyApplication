@@ -8,12 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: - UI Element
+    
+    private lazy var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.backgroundColor = .clear
+        return scrollView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .yellow
+        navigationController?.pushViewController(OneViewController(), animated: true)
+        
     }
-
-
 }
+
 
