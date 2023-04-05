@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF-Pro-Display-Bold.ttf</string>
+		<string>SF-Pro-Display-Light.ttf</string>
+		<string>SF-Pro-Display-Medium.ttf</string>
+		<string>SF-Pro-Display-Regular.ttf</string>
+		<string>SF-Pro-Display-Semibold.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -18,18 +26,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>Fonts provided by application</key>
-		<array>
-			<string>SFPRODISPLAYBLACKITALIC.OTF</string>
-			<string>SFPRODISPLAYBOLD.OTF</string>
-			<string>SFPRODISPLAYHEAVYITALIC.OTF</string>
-			<string>SFPRODISPLAYLIGHTITALIC.OTF</string>
-			<string>SFPRODISPLAYMEDIUM.OTF</string>
-			<string>SFPRODISPLAYREGULAR.OTF</string>
-			<string>SFPRODISPLAYSEMIBOLDITALIC.OTF</string>
-			<string>SFPRODISPLAYTHINITALIC.OTF</string>
-			<string>SFPRODISPLAYULTRALIGHTITALIC.OTF</string>
-		</array>
 	</dict>
 </dict>
 </plist>

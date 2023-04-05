@@ -14,13 +14,18 @@ class OneViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "One ViewController"
         label.textColor = .link
-        label.font = UIFont.boldSystemFont(ofSize: 34)
+        label.font = UIFont(name: "SFProDisplay-Bold", size: 34)
         return label
     }()
+    
+    var simpleClosure = {
+        print("sumpleClousure")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
+        simpleClosure()
         // Do any additional setup after loading the view.
     }
 

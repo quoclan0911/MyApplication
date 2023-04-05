@@ -54,6 +54,8 @@ class LoginViewController: UIViewController {
         textField.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         return textField
     }()
+    
+
 }
 
 // MARK: - Helper
@@ -78,6 +80,14 @@ extension LoginViewController {
 //            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
         ])
     }
+    
+    private func printOutFontArray() {
+        for family in UIFont.familyNames.sorted() {
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font names: \(names)")
+        }
+    }
+
 }
 
 // MARK: - Life cycle
@@ -85,12 +95,9 @@ extension LoginViewController {
 extension LoginViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        printOutFontArray()
         layout()
         view.backgroundColor = .red
-        for family in UIFont.familyNames.sorted() {
-            let names = UIFont.fontNames(forFamilyName: family)
-            print("Family: \(family) Font names: \(names)")
-        }
         navigationController?.pushViewController(OneViewController(), animated: true)
     }
 }
